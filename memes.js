@@ -6,6 +6,7 @@ function generateMeme(numb){
     .then(datas => {
         const memesName = datas.data.memes[numb].name;
         document.getElementById("meme-name").innerText = memesName;
+        document.getElementById("meme-numb").innerText = numb;
         const memesImage = datas.data.memes[numb].url;
         document.getElementById("meme-image").setAttribute('src', `${memesImage}`)
 
