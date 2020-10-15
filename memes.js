@@ -11,6 +11,14 @@ function generateMeme(numb){
 
     })
 }
+
 var randNum = Math.floor(10+ Math.random() * 90);
-console.log(randNum);
 generateMeme(randNum);
+
+const generateButton = document.getElementById('meme-button');
+generateButton.addEventListener("click", () => {
+    var randNum = Math.floor(10+ Math.random() * 90);
+    generateMeme(randNum);
+})
+
+//generateMeme(randNum);
